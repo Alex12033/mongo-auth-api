@@ -5,7 +5,6 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 
 const express = require("express");
-const { async } = require("jshint/src/prod-params.js");
 
 const app = express();
 
