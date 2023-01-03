@@ -78,12 +78,12 @@ app.post("/register", async (req, res) => {
   await registr
     .save()
     .then((item) => {
-      res.status(200);
+      res.sendStatus(200);
 
       console.log(item, "item saved to database");
     })
     .catch((err) => {
-      res.status(400);
+      res.sendStatus(400);
 
       console.log(err, "unable to save to database");
     });
